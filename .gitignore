@@ -1,0 +1,5 @@
+__pycache__
+*.log
+
+Node/node_modules
+Node/showdown-demo/highlight
