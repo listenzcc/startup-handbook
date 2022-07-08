@@ -1,6 +1,7 @@
 Import-Module PersistentHistory
 Import-Module cd-extras
 Import-Module Dircolors
+
 # Import-Module posh-git
 # Import-Module Powertab
 # Import-Module oh-my-posh
