@@ -154,6 +154,7 @@ function Get-LocationTrace {
 
     # Get trace history
     $lst = Get-Content $env:HOME/.cd-trace
+
     # Reverse the trace
     [array]::Reverse($lst)
     # Remove the duplicated rows,

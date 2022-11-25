@@ -11,5 +11,10 @@
         "katex"
     ],
     "python.pythonPath": "C:\\Users\\liste\\anaconda3\\python.exe",
-    "cSpell.enabled": true
+    "cSpell.enabled": true,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#382C07",
+        "titleBar.activeBackground": "#4E3E0A",
+        "titleBar.activeForeground": "#FDFAF1"
+    }
 }
