@@ -1,4 +1,4 @@
-Import-Module PersistentHistory
+# Import-Module PersistentHistory
 Import-Module cd-extras
 Import-Module Dircolors
 
@@ -16,6 +16,7 @@ Register-EngineEvent -SourceIdentifier powershell.exiting -SupportEvent -Action 
 $scriptFolder = "$env:OneDrive\Scripts\Powershell"
 
 . "$scriptFolder\customApps.ps1"
+. "$scriptFolder\fanqiang.ps1"
 
 # $env:Path = "C:\cygwin64\bin;$env:Path"
 
