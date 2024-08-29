@@ -13,7 +13,7 @@ Import-Csv $HistoryPath | Add-History
 
 Register-EngineEvent -SourceIdentifier powershell.exiting -SupportEvent -Action { Get-History | Select-Object -Last 100 | Export-Csv -Path $HistoryPath }
 
-$scriptFolder = "$env:OneDrive\Scripts\Powershell"
+$scriptFolder = "$env:OneDriveConsumer\Scripts\Powershell"
 
 . "$scriptFolder\customApps.ps1"
 . "$scriptFolder\fanqiang.ps1"
