@@ -19,7 +19,7 @@
         {
           "foreground": "lightGreen",
           "properties": {
-            "style": "full"
+            "style": "unique"
           },
           "style": "plain",
           "template": " {{ .Path }}",
@@ -90,18 +90,6 @@
           "style": "plain",
           "template": " | \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
           "type": "python"
-        },
-        {
-          "foreground": "lightGreen",
-          "style": "plain",
-          "template": " | \uf64f {{ .CurrentDate | date .Format }}",
-          "type": "time"
-        },
-        {
-          "foreground": "#be9ddf",
-          "style": "diamond",
-          "template": " | \uf85a RAM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB",
-          "type": "sysinfo"
         }
       ],
       "type": "prompt"
@@ -112,9 +100,7 @@
       "segments": [
         {
           "foreground": "cyan",
-          "foreground_templates": [
-            "{{ if gt .Code 0 }}red{{ end }}"
-          ],
+          "foreground_templates": ["{{ if gt .Code 0 }}red{{ end }}"],
           "properties": {
             "always_enabled": true
           },

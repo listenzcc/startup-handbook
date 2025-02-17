@@ -8,8 +8,8 @@ Import-Module Dircolors
 # Set-Theme Honukai
 
 # Save Command History
-$HistoryPath = "$(Split-Path $profile)/history.csv"
-Import-Csv $HistoryPath | Add-History
+# $HistoryPath = "$(Split-Path $profile)/history.csv"
+# Import-Csv $HistoryPath | Add-History
 
 Register-EngineEvent -SourceIdentifier powershell.exiting -SupportEvent -Action { Get-History | Select-Object -Last 100 | Export-Csv -Path $HistoryPath }
 
