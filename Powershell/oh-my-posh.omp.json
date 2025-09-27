@@ -22,7 +22,7 @@
             "style": "unique"
           },
           "style": "plain",
-          "template": " {{ .Path }}",
+          "template": " <u>{{ .Path }}</u> ",
           "type": "path"
         },
         {

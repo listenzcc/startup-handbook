@@ -1,6 +1,6 @@
 # Import-Module PersistentHistory
-Import-Module cd-extras
-Import-Module Dircolors
+# Import-Module cd-extras
+# Import-Module Dircolors
 
 # Import-Module posh-git
 # Import-Module Powertab
@@ -13,7 +13,7 @@ Import-Module Dircolors
 
 Register-EngineEvent -SourceIdentifier powershell.exiting -SupportEvent -Action { Get-History | Select-Object -Last 100 | Export-Csv -Path $HistoryPath }
 
-$scriptFolder = "$env:OneDriveConsumer\Scripts\Powershell"
+$scriptFolder = $PSScriptRoot
 
 . "$scriptFolder\customApps.ps1"
 . "$scriptFolder\fanqiang.ps1"

@@ -367,13 +367,10 @@ function Get-FilesByExtension {
     $select.Group | Select-Object Name, LastWriteTime, fullname, extension | Sort-Object LastWriteTime
 }
 
-$ScriptPath = $script:MyInvocation.MyCommand.Path
-
-
 Set-Item Alias:cd Set-Location-MyEnhance
 Remove-Item Alias:wget
 Set-Alias cdt Get-LocationTrace
-Update-TypeData -AppendPath $ScriptPath\\..\\type\\fileTypeEnhance.ps1xml # -verbose
+Update-TypeData -AppendPath $PSScriptRoot\\type\\fileTypeEnhance.ps1xml # -verbose
 
 function MyFunctions() {
     # The script is
