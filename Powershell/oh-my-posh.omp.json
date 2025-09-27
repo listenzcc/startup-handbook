@@ -7,22 +7,17 @@
         {
           "foreground": "cyan",
           "style": "plain",
-          "template": "\u250c {{ .Icon }}",
+          "template": "{{ .Icon }} ",
           "type": "os"
         },
         {
-          "foreground": "#be9ddf",
-          "style": "plain",
-          "template": " @{{ .UserName }}",
-          "type": "session"
-        },
-        {
-          "foreground": "lightGreen",
+          "foreground": "red",
           "properties": {
-            "style": "unique"
+            "style": "unique",
+            "folder_separator_template": "/"
           },
           "style": "plain",
-          "template": " <u>{{ .Path }}</u> ",
+          "template": "<i><u>{{ .Path }}</u></i> ",
           "type": "path"
         },
         {
@@ -105,7 +100,7 @@
             "always_enabled": true
           },
           "style": "powerline",
-          "template": "\u2514\u2500Δ ",
+          "template": "<s>\u2514\u2500\u2500  </s> ",
           "type": "shell"
         }
       ],
