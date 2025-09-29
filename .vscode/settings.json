@@ -1,20 +1,26 @@
 {
-    "cSpell.words": [
-        "Showndown",
-        "cdict",
-        "codehighlight",
-        "configparser",
-        "fpath",
-        "highlightjs",
-        "htmlunencode",
-        "iloc",
-        "katex"
-    ],
-    "python.pythonPath": "C:\\Users\\liste\\anaconda3\\python.exe",
-    "cSpell.enabled": true,
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#382C07",
-        "titleBar.activeBackground": "#4E3E0A",
-        "titleBar.activeForeground": "#FDFAF1"
-    }
+  "cSpell.words": [
+    "Showndown",
+    "cdict",
+    "codehighlight",
+    "configparser",
+    "fpath",
+    "highlightjs",
+    "htmlunencode",
+    "iloc",
+    "katex"
+  ],
+  "python.pythonPath": "C:\\Users\\liste\\anaconda3\\python.exe",
+  "cSpell.enabled": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#382C07",
+    "titleBar.activeBackground": "#4E3E0A",
+    "titleBar.activeForeground": "#FDFAF1"
+  },
+  "editor.fontFamily": "Consolas, \"MesloLGM Nerd Font Mono\", monospace",
+  "editor.allowVariableFonts": true,
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.lineHeight": 1.2,
+  "debug.console.fontFamily": "default",
+  "debug.console.fontSize": 14
 }

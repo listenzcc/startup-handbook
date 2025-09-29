@@ -107,13 +107,11 @@
             "always_enabled": true,
             "cache_duration": "none"
           },
-          "template": "<s>\u2514\u2500\u2500  </s> ",
+          "template": "\u2514\u2500\u2500\u2500\u2500 ",
           "foreground": "cyan",
           "type": "shell",
           "style": "powerline",
-          "foreground_templates": [
-            "{{ if gt .Code 0 }}red{{ end }}"
-          ]
+          "foreground_templates": ["{{ if gt .Code 0 }}red{{ end }}"]
         }
       ],
       "newline": true
