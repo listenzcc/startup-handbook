@@ -80,7 +80,7 @@
             "display_mode": "files",
             "fetch_version": true
           },
-          "template": " | {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "template": " | Ruby {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
           "foreground": "#DE3F24",
           "type": "ruby",
           "style": "plain"
